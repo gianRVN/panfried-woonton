@@ -1,0 +1,67 @@
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './app/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './lib/**/*.{ts,tsx}',
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      spacing: {
+        '30': '7.5rem',
+      },
+      colors: {
+        primary: '#536443',
+        'primary-dim': '#475838',
+        'primary-container': '#d5e9bf',
+        'on-primary': '#edffd8',
+        'on-primary-fixed': '#344426',
+        secondary: '#855248',
+        'secondary-dim': '#77463d',
+        'secondary-container': '#ffdad4',
+        'on-secondary': '#fff7f6',
+        'on-secondary-container': '#75453c',
+        tertiary: '#34628c',
+        'tertiary-container': '#a0cdfc',
+        'on-tertiary': '#f7f9ff',
+        error: '#aa371c',
+        'error-container': '#fa7150',
+        'on-error': '#fff7f6',
+        surface: '#faf9f6',
+        'surface-dim': '#d9dbd6',
+        'surface-bright': '#faf9f6',
+        'surface-tint': '#536443',
+        'surface-variant': '#e1e3df',
+        'surface-container': '#eeeeea',
+        'surface-container-low': '#f4f4f0',
+        'surface-container-high': '#e8e8e4',
+        'surface-container-highest': '#e1e3df',
+        'surface-container-lowest': '#ffffff',
+        background: '#faf9f6',
+        'on-background': '#303330',
+        'on-surface': '#303330',
+        'on-surface-variant': '#5d605c',
+        outline: '#797b78',
+        'outline-variant': '#b1b2af',
+        'inverse-surface': '#0d0f0d',
+        'inverse-on-surface': '#9d9d9a',
+        'inverse-primary': '#e3f8cc',
+      },
+      fontFamily: {
+        headline: ['var(--font-noto-serif)', 'Georgia', 'serif'],
+        body: ['var(--font-jakarta)', 'system-ui', 'sans-serif'],
+        label: ['var(--font-jakarta)', 'system-ui', 'sans-serif'],
+      },
+      borderRadius: {
+        DEFAULT: '1rem',
+        lg: '2rem',
+        xl: '3rem',
+        full: '9999px',
+      },
+    },
+  },
+  plugins: [],
+}
+export default config
