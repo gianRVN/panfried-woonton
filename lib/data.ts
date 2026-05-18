@@ -43,7 +43,7 @@ export const projects: Project[] = [
     tags: "Astro",
     image: "/temansharingberoda.png",
     inDevelopment: true,
-    url: "https://dev.temansharingberoda.com",
+    url: "https://temansharingberoda.com",
   },
   {
     id: 5,
